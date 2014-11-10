@@ -1,7 +1,19 @@
 .emacs.d
 ========
 
-# INSTALLATION
+# Description
+
+Configuration Emacs **Special 42** avec commentaires
+
+**WARNING** *Some of these configurations and/or commands may be specific to a certain setup (42 school), some commands might useless to others or could lead to troubleshooting*
+
+# Content
+
+* Header Automatique
+* Clavier
+*
+
+# Installation
 
 #### Proteger les anciennes configs
 
