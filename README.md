@@ -9,9 +9,9 @@ Configuration Emacs **Special 42** avec commentaires
 
 # Content
 
-* Header 42 Automatique (commande shell specifique)
+* Header 42 Automatique a la creation de fichier (commande shell specifique)
+* Makefile automatique a la creation de fichier
 * Numpad active
-* Makefile automatique
 * Autocompletion
 * Affichage des lignes
 * Afficher/Masquer les lignes avec "C-x l"
@@ -49,3 +49,12 @@ cd ~/.emacs.d/ ; cp .myemacs ~ ; cp .emacs ~;
 
 ```
 ##### Enjoy !
+
+
+## Contacte
+
+Si vous avew des question, des iddees pour l'ameliorer, des corrections...
+
+* **Jabber**	=> **ppeltier
+* **mail**		=> ppeltier@student.42.fr
+* *Je traine souvent sur Tatouine sur le rang de gauche*
