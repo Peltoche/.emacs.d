@@ -1,10 +1,10 @@
-((("echo" .
-   [2 0 1 0])
-  ("linum.el" .
-   [0 0 0 1 0 0 0 0])
-  ("set-face-background" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+((("show-paren-match" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("show-paren-mode" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("show-paren-match" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("linum.el" .
+   [0 0 0 1 0 0 0 0])
+  ("echo" .
+   [2 0 1 0])))
