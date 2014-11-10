@@ -9,9 +9,20 @@ Configuration Emacs **Special 42** avec commentaires
 
 # Content
 
-* Header Automatique
-* Clavier
-*
+* Header 42 Automatique (commande shell specifique)
+* Numpad active
+* Makefile automatique
+* Autocompletion
+* Affichage des lignes
+* Afficher/Masquer les lignes avec "C-x l"
+* Surlignage ligne courante
+* Surligne parentheses
+* Fermeture automatique des parentheses
+* Surligne les espaces en fin de ligne
+* Supprime les espaces en fin de ligne a la sauvegarde
+* Reduction de la fonction sur elle meme avec F5
+* Comment une zone avec "C-c C-c"
+
 
 # Installation
 
