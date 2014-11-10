@@ -29,7 +29,7 @@ Configuration Emacs **Special 42** avec commentaires
 #### Proteger les anciennes configs
 
 ```
-cd ~ ; cp .emacs .emacs.old ; cp -r .emacs.d/ .emacs.d.old/;
+cd ~ ; mv .emacs .emacs.old ; mv -r .emacs.d/ .emacs.d.old/;
 
 ```
 *Vous pourrez toujours revenir a votre ancienne config en enlevant les .old*

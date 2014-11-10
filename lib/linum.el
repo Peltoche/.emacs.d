@@ -61,8 +61,7 @@ should evaluate to a string to be shown on that line. See also
   :group 'linum)
 
 (defcustom linum-eager t
-  "Whether line numbers should be updated after each command.
-The conservative setting `nil' might miss some buffer changes,
+"The conservative setting `nil' might miss some buffer changes,
 and you have to scroll or press C-l to update the numbers."
   :group 'linum
   :type 'boolean)
@@ -154,7 +153,7 @@ and you have to scroll or press C-l to update the numbers."
                               (push o linum-overlays))
                             (setq linum-available (delete o linum-available))
                             (throw 'visited t))))))
-        (setq width (max width (length str)))
+		(setq width (max width (+ (length str) 1)))
         (unless visited
           (let ((ov (if (null linum-available)
                         (make-overlay (point) (point))
