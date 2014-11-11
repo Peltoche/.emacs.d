@@ -1,4 +1,8 @@
-((("directory-files" .
+((("call-process" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("shell-command-on-region" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0])
+  ("directory-files" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("not" .
    [1 0 0])
@@ -33,6 +37,6 @@
   ("show-paren-mode" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("show-paren-match" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
   ("create-makefiletest" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))

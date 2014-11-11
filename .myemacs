@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/10 21:28:06 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/11 14:28:52 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -55,7 +55,7 @@
 (require 'autopair)
 
 ;; Chargement des libs
-;(require 'cl-lib)
+(require 'cl-lib)
 (require 'linum)
 (require 'paren)
 ;(require 'mwheel)
@@ -77,11 +77,12 @@
 (global-set-key (kbd "C-x l") 'linum-mode)
 
 ;; Surligne la ligne courante
-;(global-hl-line-mode 1)
-;(set-face-background 'hl-line "#fff")
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#333")
 
 ;; Surligne la zone entre parentheses
 (setq show-paren-style 'expression)
+(set-face-background 'show-paren-match "#464646")
 
 ;; Affiche les lignes et colonnes dans la barre du bas
 (line-number-mode 1)
