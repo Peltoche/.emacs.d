@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/11/09 14:52:26 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/11 02:25:42 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/11 16:47:11 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -17,32 +17,30 @@
   "\n"
   "NAME		= # Put your binary name"
   "\n"
-  "\n"
-  "\n"
   "SRC			= # Put your sources"
   "\n"
   "\n"
   "OBJ			= $(SRC:.c=.o)\n"
   "CC			= /usr/bin/gcc\n"
   "CFLAGS		= -Wall -Wextra -Werror\n"
-  "CDEBUG		= -W -Wall -ansi -pedantic -g\n"
+  "CDEBUG		= -Wall -Wextra -Werror -ansi -pedantic -g\n"
   "RM			= /bin/rm -f\n"
   "ECHO			= /bin/echo -e\n"
   "\n"
   "$(NAME)	:		$(OBJ)\n"
-  "				@$(CC) $(INC) $(CFLAGS) -o $(NAME) $(OBJ)\n"
-  "				@$(ECHO) '\\033[0;32m> Compiled\\033[0m'\n"
+  "				@$(CC) $(CFLAGS) -o $(NAME) $(OBJ)\n"
+  "				@$(ECHO) '> Compiled'\n"
   "\n"
   "clean	:\n"
   "				-@$(RM) $(OBJ)\n"
   "				-@$(RM) *~\n"
-  "				@$(ECHO) '\\033[0;35m> Directory cleaned\\033[0m'\n"
+  "				@$(ECHO) '> Directory cleaned'\n"
   "\n"
   "all		:		$(NAME)\n"
   "\n"
   "fclean	:		clean\n"
   "				-@$(RM) $(NAME)\n"
-  "				@$(ECHO) '\\033[0;35m> Remove executable\\033[0m'\n"
+  "				@$(ECHO) '> Remove executable'\n"
   "\n"
   "re		:		fclean all\n"
   "\n"
@@ -50,7 +48,7 @@
   "\n"
   "debug	:		$(OBJ)\n"
   "				@$(CC) $(INC) $(CDEBUG) -o $(NAME) $(OBJ)\n"
-  "				@$(ECHO) '\\033[0;32m> Mode Debug: done\\033[0m'\n"
+  "				@$(ECHO) '> Mode Debug: done'\n"
   "\n"
   ".c.o	:\n"
   "				$(CC) $(CFLAGS) -o $@ -c $<\n")
