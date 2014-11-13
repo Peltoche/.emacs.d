@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/11 14:28:52 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/13 13:57:00 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -168,6 +168,19 @@
 ;;--------------------------------------------------------------------
 ;; Sourie
 
+;; Autorise la sourie
+(unless window-system
+(require 'mouse)
+(xterm-mouse-mode t)
+(global-set-key [mouse-4] '(lambda ()
+(interactive)
+(scroll-down 1)))
+(global-set-key [mouse-5] '(lambda ()
+(interactive)
+(scroll-up 1)))
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
+)
 
 ;; Le curseur reste toujours à la même position quand on scroll
 (setq scroll-preserve-screen-position t)
@@ -187,3 +200,6 @@
 ;; Enleve automatiquement les espaces en fin de ligne des qu'on sauvegarde
  (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (put 'scroll-left 'disabled nil)
+
+;; Indentation automatique en c-mode
+(define-key global-map (kbd "RET") 'newline-and-indent)
