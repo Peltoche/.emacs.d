@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/11/09 14:41:23 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/12 15:14:41 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/13 14:36:37 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -22,8 +22,8 @@
 (add-to-list 'auto-mode-alist '("\\.hh\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . load-fileHTML))
 (add-to-list 'auto-mode-alist '("\\.el\\'" . load-fileEL))
-(add-to-list 'auto-mode-alist '(".myzshrc" . load-fileEL))
-(add-to-list 'auto-mode-alist '(".zshrc" . load-fileEL))
+(add-to-list 'auto-mode-alist '("\\zsh\\" . load-fileEL))
+
 
 
 (defun load-makefile ()
