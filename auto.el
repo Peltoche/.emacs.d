@@ -5,10 +5,11 @@
 ;                                                     +:+ +:+         +:+      ;
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
-;    Created: 2014/11/09 14:41:23 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/13 14:36:37 by ppeltier         ###   ########.fr        ;
+;    Created: 2014/11/13 16:49:58 by ppeltier          #+#    #+#              ;
+;    Updated: 2014/11/13 16:54:39 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
+
 
 ;; Commenter prochaine ligne pour desactiver le makefile automatique
 (add-to-list 'auto-mode-alist '("Makefile" . load-makefile))
@@ -21,10 +22,7 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.hh\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . load-fileHTML))
-(add-to-list 'auto-mode-alist '("\\.el\\'" . load-fileEL))
-(add-to-list 'auto-mode-alist '("\\zsh\\" . load-fileEL))
-
-
+(add-to-list 'auto-mode-alist '("\\.el\\'" . load-fileSH))
 
 (defun load-makefile ()
   "Load Header and push a Makefile squeleton model"

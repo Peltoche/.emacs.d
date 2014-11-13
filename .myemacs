@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/13 13:57:00 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/13 16:55:04 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -45,7 +45,6 @@
 (add-to-list 'load-path "~/.emacs.d/autocomplete") ;; Pour l'autocompletion
 (add-to-list 'load-path "~/.emacs.d/lib/") ;; Pour tout les differentes libs ajoutes
 (add-to-list 'load-path "~/.emacs.d/autopair-master") ;; Pour la fermeture des parenthes
-
 (load-file "~/.emacs.d/auto.el") ;; Pour les autoloads (En cas de problemes =>c.f autoload.el)
 
 
