@@ -45,7 +45,7 @@ cd ~ ; git clone https://github.com/Peltoche/.emacs.d.git ;
 #### Deplacer le .myemacs et le .emacs dans le home
 
 ```
-cd ~/.emacs.d/ ; cp .myemacs ~ ; cp .emacs ~;
+cd ~/.emacs.d/ ; cp .emacs ~;
 
 ```
 ##### Enjoy !
@@ -53,7 +53,7 @@ cd ~/.emacs.d/ ; cp .myemacs ~ ; cp .emacs ~;
 
 ## Contacte
 
-Si vous avew des question, des iddees pour l'ameliorer, des corrections...
+Si vous avez des question, des iddees pour l'ameliorer, des corrections...
 
 * **Jabber**	=> **ppeltier
 * **mail**		=> ppeltier@student.42.fr
