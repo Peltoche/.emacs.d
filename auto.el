@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/11/13 16:49:58 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/13 16:54:39 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/11/21 17:03:36 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -22,7 +22,7 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.hh\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . load-fileHTML))
-(add-to-list 'auto-mode-alist '("\\.el\\'" . load-fileSH))
+(add-to-list 'auto-mode-alist '("\\.el\\'" . load-fileLISP))
 
 (defun load-makefile ()
   "Load Header and push a Makefile squeleton model"
@@ -72,6 +72,19 @@
   (interactive)
   (goto-char(point-min))
   (sh-mode)
+  (if  (< (buffer-size) 10)
+	  (progn
+		(newline)
+		(header-insert)
+		(goto-char(point-max))
+		))
+)
+
+(defun load-fileLISP ()
+  "Load Header and add a main squeleton model"
+  (interactive)
+  (goto-char(point-min))
+  (emacs-lisp-mode)
   (if  (< (buffer-size) 10)
 	  (progn
 		(newline)
