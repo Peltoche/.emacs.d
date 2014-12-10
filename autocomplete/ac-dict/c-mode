@@ -35,3 +35,6 @@ unsigned
 void
 volatile
 while
+unistd
+stdio
+stdlib
