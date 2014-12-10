@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/13 16:55:04 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/10 21:02:43 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -30,43 +30,35 @@
 ;;
 ;;ENJOY !
 
-
-;; Test
-
-
-
-
-
-
-
-
 ;;--------------------------------------------------------------------
 ;; Les differents chemins / fichiers
-(add-to-list 'load-path "~/.emacs.d/autocomplete") ;; Pour l'autocompletion
 (add-to-list 'load-path "~/.emacs.d/lib/") ;; Pour tout les differentes libs ajoutes
-(add-to-list 'load-path "~/.emacs.d/autopair-master") ;; Pour la fermeture des parenthes
 (load-file "~/.emacs.d/auto.el") ;; Pour les autoloads (En cas de problemes =>c.f autoload.el)
 
 
 ;;--------------------------------------------------------------------
+;; Test
+
+
+
+;;--------------------------------------------------------------------
 ;; Le chargement des fichiers
-(require 'auto-complete-config) ;; Fichiers et libs autocomplete
-(require 'autopair)
 
 ;; Chargement des libs
 (require 'cl-lib)
 (require 'linum)
 (require 'paren)
-;(require 'mwheel)
-;(require 'lacarte)
 
 ;;--------------------------------------------------------------------
 ;; Autocompletion
 
 ;; Autocompletion
+(add-to-list 'load-path "~/.emacs.d/autocomplete") ;; Pour l'autocompletion
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/autocomplete/ac-dict")
 (ac-config-default)
+(global-auto-complete-mode t)
+
 
 ;;--------------------------------------------------------------------
 ;; Affichage
@@ -115,11 +107,6 @@
 ;; Descent/monte la fenetre de 2 lines quand le curseur est au bout
 (setq scroll-step 3)
 
-;; Laisser le curseur en place lors d'un defilement par pages.
-;; Par defaut, Emacs place le curseur en debut ou fin d'ecran
-;; selon le sens du defilement.
-(setq scroll-preserve-screen-position t)
-
 ;; Reduit la fontion sur elle meme
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 (add-hook 'lisp-mode-hook 'hs-minor-mode)
@@ -164,6 +151,28 @@
 ;; Active le minor-mode IDO pour la navigation dans le mini-buffer
 (ido-mode t)
 
+;; Indente la region selectionner avec tab
+(global-set-key (kbd "TAB") 'indent-region)
+
+;; Permet le copier/coller entre emacs et les autres fonctions
+(global-set-key (kbd "C-c x") 'pbcopy)
+(global-set-key (kbd "C-c v") 'pbpaste)
+(global-set-key (kbd "C-c w") 'pbcut)
+
+(defun pbcopy ()
+    (interactive)
+	  (call-process-region (point) (mark) "pbcopy")
+	    (setq deactivate-mark t))
+
+(defun pbpaste ()
+    (interactive)
+	  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun pbcut ()
+    (interactive)
+	  (pbcopy)
+	    (delete-region (region-beginning) (region-end)))
+
 ;;--------------------------------------------------------------------
 ;; Sourie
 
@@ -194,6 +203,8 @@
 (setq ispell-dictionary "francais")
 
 ;; Fermeture de la parenthese automatique ==> autopair
+(add-to-list 'load-path "~/.emacs.d/autopair-master") ;; Pour la fermeture des parenthes
+(require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
 ;; Enleve automatiquement les espaces en fin de ligne des qu'on sauvegarde

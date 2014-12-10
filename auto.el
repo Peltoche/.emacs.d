@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/11/13 16:49:58 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/11/21 17:03:36 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/10 19:50:14 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -18,6 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . load-fileH))
 (add-to-list 'auto-mode-alist '("\\.c\\'" . load-fileC))
 (add-to-list 'auto-mode-alist '("\\.sh\\'" . load-fileSH))
+(add-to-list 'auto-mode-alist '(".myzshrc" . load-fileSH))
 (add-to-list 'auto-mode-alist '("\\.cpp\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . load-fileCPP))
 (add-to-list 'auto-mode-alist '("\\.hh\\'" . load-fileCPP))

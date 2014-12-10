@@ -6,7 +6,7 @@
 ;    by: thor <thor@42.fr>                           +#+  +:+       +#+         ;
 ;                                                  +#+#+#+#+#+   +#+            ;
 ;    Created: 2013/06/18 14:01:14 by thor               #+#    #+#              ;
-;    Updated: 2014/11/21 17:15:29 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/10 19:56:14 by ppeltier         ###   ########.fr        ;
 ;                                                                               ;
 ;*******************************************************************************;
 
@@ -35,7 +35,7 @@
                              64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))
 
 ; Load user configuration
-(if (file-exists-p "~/.emacs.d/.myemacs") (load-file "~/.emacs.d/.myemacs"))
+(if (file-exists-p "~/.emacs.d/myemacs") (load-file "~/.emacs.d/myemacs"))
 
 
 
