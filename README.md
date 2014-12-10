@@ -13,6 +13,9 @@ Configuration Emacs **Special 42** avec commentaires
 * Makefile automatique a la creation de fichier
 * Numpad active
 * Autocompletion
+* Autocompletion des prototypes
+* Indentation automatique
+* Indentation de zone
 * Affichage des lignes
 * Afficher/Masquer les lignes avec "C-x l"
 * Surlignage ligne courante
