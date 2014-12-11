@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/11/09 14:52:26 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/12/08 13:51:32 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/11 15:50:27 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -20,7 +20,7 @@
 "DIROBJ		=	. # ./path/to/object/directorie/\n"
 "INCLUDE		=	. # ./path/to/include/directorie/\n"
 "SUB_MAKE	=	# ./path/to/sub/makefile/directorie/ (Put nothing if isn't)\n"
-"INC_LIB		=	# -L./path/to/lib/directorie -lname"
+"INC_LIB		=	# -L./path/to/lib/directorie -lname\n"
 "SRC			=	# Put your sources name\n"
 "\n"
 "OBJ			=	$(SRC:.c=.o)\n"

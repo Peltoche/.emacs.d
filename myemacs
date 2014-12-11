@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/12/11 12:03:52 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/11 12:45:03 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -174,7 +174,7 @@
 (ido-mode t)
 
 ;; Indente la region selectionner avec tab
-(global-set-key (kbd "TAB") 'indent-region)
+;(global-set-key (kbd "TAB") 'indent-region)
 
 ;; Permet le copier/coller entre emacs et les autres fonctions
 (global-set-key (kbd "C-c x") 'pbcopy)
