@@ -6,7 +6,7 @@
 ;    By: ppeltier <ppeltier@student.42.fr>          +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2014/08/30 18:20:01 by ppeltier          #+#    #+#              ;
-;    Updated: 2014/12/11 12:45:03 by ppeltier         ###   ########.fr        ;
+;    Updated: 2014/12/11 17:00:48 by ppeltier         ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -38,13 +38,6 @@
 
 ;;--------------------------------------------------------------------
 ;; Test
-
-
-;; pas de ligne en plus à la fin du fichier
-(setq next-line-add-newlines nil)
-
-;; s'assure que le fichier contient une nouvelle ligne à la fin
-(setq require-final-newline t)
 
 ;; pour voir les images
 (auto-image-file-mode 1)
