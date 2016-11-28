@@ -1,5 +1,8 @@
 .emacs.d
 ========
+# Warning
+
+This repos is no longer maintained. 
 
 # Description
 
@@ -54,10 +57,3 @@ cd ~/.emacs.d/ ; cp emacs ~/.emacs;
 ##### Enjoy !
 
 
-## Contacte
-
-Si vous avez des question, des iddees pour l'ameliorer, des corrections...
-
-* **Jabber**	=> **ppeltier
-* **mail**		=> dev@halium.fr
-* *Je traine souvent sur Tatouine sur le rang de gauche*
