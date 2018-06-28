@@ -12,9 +12,8 @@
 
 ; Load general features files
 (if (file-exists-p "/usr/share/emacs/site-lisp/")
-	(setq config_files "/usr/share/emacs/site-lisp/")
-  (setq config_files "~/.emacs.d/root-42/"))
-(setq load-path (append (list nil config_files) load-path))
+	(add-to-list 'load-path (expand-file-name "/usr/share/emacs/site-lisp/")))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/root_42/"))
 
 (load "list.el")
 (load "string.el")
